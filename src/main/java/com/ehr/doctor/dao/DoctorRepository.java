@@ -8,4 +8,6 @@ import java.util.Optional;
 
 public interface DoctorRepository extends JpaRepository<Doctor, Long> {
     Optional<Doctor> findByUserid(Long userid);
+
+    Optional<Doctor> getDoctorById(Long id);
 }
